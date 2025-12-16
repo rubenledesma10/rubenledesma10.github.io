@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruben Ledesma | Desarrollador de Software</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px 40px;
+      text-align: center;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #1f2933;
+      color: var(--text);
+      font-size: .9rem;
+      transition: background .3s, transform .2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--accent);
+      color: #020617;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.8);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.6);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .tags {
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1f2933;
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: .8rem;
+      margin: 4px 4px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="fotocv.jpeg" alt="Foto de Ruben Ledesma" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:20px;border:4px solid var(--accent);" />
+    <h1>Hola, soy <span>Ruben Ledesma</span></h1>
+    <p>
+      Backend Developer con experiencia en <strong>Java, Spring Boot, Python y Flask</strong>, enfocado en el desarrollo de <strong>APIs REST seguras, escalables y eficientes</strong>.<br />
+      Experiencia con <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>Docker</strong> y <strong>CI/CD con GitHub Actions</strong>.<br />
+      Actualmente cursando el <strong>último año de la Tecnicatura Superior en Desarrollo de Software</strong>.
+    </p>
+    </header>
+
+<nav style="text-align:center;margin-bottom:40px;">
+  <a href="#sobre-mi" class="nav-btn">Sobre mí</a>
+  <a href="#proyectos" class="nav-btn">Proyectos</a>
+  <a href="#educacion" class="nav-btn">Educación</a>
+  <a href="#experiencia" class="nav-btn">Experiencia</a>
+  <a href="#habilidades" class="nav-btn">Habilidades</a>
+  <a href="#cv" class="nav-btn">CV</a>
+  <a href="#contacto" class="nav-btn">Contacto</a>
+</nav>
+
+
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <div class="card">
+    <p>
+      Soy <strong>Backend Developer</strong> con experiencia en el desarrollo de
+      <strong>APIs REST seguras, escalables y eficientes</strong>, utilizando
+      <strong>Java con Spring Boot</strong> y <strong>Python con Flask</strong>.
+      He trabajado en proyectos reales dentro de equipos multidisciplinarios,
+      participando activamente en todo el ciclo de desarrollo de software.
+    </p>
+
+    <p style="margin-top:12px;">
+      Tengo experiencia en el diseño y gestión de bases de datos
+      <strong>MySQL</strong> y <strong>PostgreSQL</strong>, implementación de
+      autenticación y autorización con <strong>JWT</strong> y control de
+      roles/permisos, así como en la automatización de despliegues mediante
+      <strong>Docker</strong>, <strong>Docker Compose</strong> y
+      <strong>CI/CD con GitHub Actions</strong>.
+    </p>
+
+    <p style="margin-top:12px;">
+      Además, cuento con conocimientos en frontend que me permiten colaborar en
+      proyectos <strong>fullstack</strong> y comprender el flujo completo de una
+      aplicación. Actualmente curso el <strong>último año de la Tecnicatura
+      Superior en Desarrollo de Software</strong> y busco seguir creciendo
+      profesionalmente en entornos técnicos desafiantes.
+    </p>
+  </div>
+</section>
+
+  <section id="experiencia">
+    <h2>Experiencia laboral</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Desarrollador Java Backend – MateSD (Mate Soluciones Digitales)</h3>
+        <p><em>06/2024 – 10/2024</em></p>
+        <p>
+          Participé en el desarrollo de un sistema de gestión para un mini supermercado,
+          trabajando en un equipo multidisciplinario y aportando principalmente en el backend.
+        </p>
+        <ul style="margin-top:10px;padding-left:18px;">
+          <li>Desarrollo de funcionalidades backend con <strong>Java, Spring Boot y Spring Security</strong>.</li>
+          <li>Diseño y gestión de bases de datos <strong>MySQL</strong> y <strong>PostgreSQL</strong>, optimizando consultas hasta un 25%.</li>
+          <li>Implementación de carga automática de datos al iniciar la aplicación.</li>
+          <li>Despliegue en producción utilizando <strong>Docker</strong> y <strong>Docker Compose</strong>.</li>
+          <li>Automatización de despliegues y actualizaciones mediante <strong>GitHub Actions (CI/CD)</strong>.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Spring Security</span>
+          <span class="tag">Docker</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Git y GitHub</span>
+          <span class="tag">Trabajo en equipo</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Desarrollador Java Backend – No Country</h3>
+        <p><em>01/2024 – 05/2024</em></p>
+        <p>
+          Desarrollo backend de una aplicación de concientización sobre apuestas,
+          trabajando de forma colaborativa en un entorno ágil.
+        </p>
+        <ul style="margin-top:10px;padding-left:18px;">
+          <li>Desarrollo de APIs REST con <strong>Java</strong> y <strong>Spring Boot</strong>.</li>
+          <li>Implementación de autenticación <strong>JWT</strong> y control de roles/permisos.</li>
+          <li>Creación de un sistema de créditos automáticos diarios para usuarios.</li>
+          <li>Implementación de envíos de emails automatizados con <strong>JavaMail</strong>.</li>
+          <li>Diseño de bases de datos relacionales y despliegue con <strong>Docker Compose</strong>.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">JWT</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Git y GitHub</span>
+          <span class="tag">Trabajo en equipo</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<section id="educacion">
+  <h2>Educación & Formación</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Tecnicatura Superior en Desarrollo de Software</h3>
+      <p><em>CESIT – Instituto de Educación Superior</em></p>
+      <p><strong>En curso — último año</strong></p>
+      <p style="margin-top:10px;">
+        Formación orientada al desarrollo de software backend, bases de datos,
+        APIs REST, arquitectura de aplicaciones y metodologías ágiles.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Formación complementaria</h3>
+      <ul style="margin-top:10px;padding-left:18px;">
+        <li>Microservicios con Spring Cloud – TodoCode</li>
+        <li>Java y Spring Boot – TodoCode</li>
+        <li>Diplomatura Web Full Stack – UTN</li>
+        <li>Inglés aplicado a las tecnologías</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Idiomas</h3>
+      <p>Español: Nativo</p>
+      <p>Inglés: A2 (lectura técnica)</p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="habilidades">
+    <h2>Habilidades técnicas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Backend</h3>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Spring Cloud</span>
+          <span class="tag">Spring Security</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Frontend</h3>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">Jinja</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Herramientas & Metodologías</h3>
+        <div class="tags">
+          <span class="tag">Docker</span>
+          <span class="tag">Docker Compose</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Agile</span>
+          <span class="tag">Scrum</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Bases de datos</h3>
+        <div class="tags">
+          <span class="tag">MySQL</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos destacados</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>GoTour – Plataforma turística inteligente</h3>
+        <p>
+          Aplicación fullstack que digitaliza la información turística de Maipú mediante códigos QR y mapas interactivos,
+          facilitando el acceso a información confiable sobre bodegas, restaurantes, actividades y transporte.
+        </p>
+        <p>
+          Fui responsable del diseño e implementación completa de la <strong>seguridad</strong>: autenticación,
+          encriptación de contraseñas, autorización por roles y protección de rutas, tanto en backend como frontend.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Seguridad</span>
+          <span class="tag">Fullstack</span>
+          <span class="tag">Git y GitHub</span>
+          <span class="tag">Trabajo en equipo</span>
+        </div>
+        <p style="margin-top:10px;"><a href="https://github.com/rubenledesma10/GoTour" target="_blank">Ver en GitHub</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Tienda de Electrodomésticos – Arquitectura de Microservicios</h3>
+        <p>
+          Backend desarrollado con arquitectura de microservicios para una tienda online, separando responsabilidades
+          en servicios de productos, carrito y ventas, comunicados entre sí para una experiencia de compra fluida.
+        </p>
+        <p>
+          Proyecto realizado íntegramente por mí, aplicando patrones de arquitectura como <strong>Eureka</strong>,
+          <strong>API Gateway</strong>, <strong>Config Server</strong> y tolerancia a fallos con <strong>Resilience4J</strong>.
+        </p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Spring Cloud</span>
+          <span class="tag">Microservicios</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git y GitHub</span>
+        </div>
+        <p style="margin-top:10px;"><a href="https://github.com/rubenledesma10/tienda_electrodomesticos_microservicios" target="_blank">Ver en GitHub</a></p>
+      </div>
+
+      <div class="card">
+        <h3>LUMI – Copiloto educativo con IA</h3>
+        <p>
+          Aplicación educativa desarrollada en una hackatón, orientada a analizar la fluidez lectora de estudiantes
+          y brindar retroalimentación automática mediante inteligencia artificial.
+        </p>
+        <p>
+          Me encargué de la <strong>integración de IA generativa</strong> utilizando la API de Gemini,
+          conectando el modelo con la aplicación para el análisis y generación de respuestas personalizadas.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">IA</span>
+          <span class="tag">Hackatón</span>
+          <span class="tag">Git y GitHub</span>
+          <span class="tag">Trabajo en equipo</span>
+        </div>
+        <p style="margin-top:10px;"><a href="https://github.com/rubenledesma10/lumi" target="_blank">Ver en GitHub</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Tienda de Comercio – API REST con Spring Boot</h3>
+        <p>
+          Backend para una tienda de bazar que permite gestionar productos, clientes y ventas mediante una API REST,
+          incorporando consultas específicas y métricas de negocio.
+        </p>
+        <p>
+          Proyecto desarrollado de forma individual como trabajo final de curso, aplicando buenas prácticas
+          de diseño, persistencia de datos y pruebas con Postman.
+        </p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">API REST</span>
+        </div>
+        <p style="margin-top:10px;"><a href="https://github.com/rubenledesma10/tiendaComercio_springBoot" target="_blank">Ver en GitHub</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Argenoid – Videojuego 2D inspirado en Arkanoid</h3>
+        <p>
+          Videojuego 2D desarrollado en Python con Pygame, inspirado en el clásico Arkanoid,
+          con temática argentina, sistema de puntajes, vidas y menú animado.
+        </p>
+        <p>
+          Participé en el desarrollo de la lógica del juego, manejo de colisiones,
+          estados, reutilización de sprites y aplicación de patrones de diseño.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pygame</span>
+          <span class="tag">Game Loop</span>
+          <span class="tag">Patrones de diseño</span>
+          <span class="tag">Git y GitHub</span>
+          <span class="tag">Trabajo en equipo</span>
+        </div>
+        <p style="margin-top:10px;"><a href="https://github.com/SantiDev03/arkanoid" target="_blank">GitHub</a> · <a href="https://www.youtube.com/watch?v=e9hnXtgwrak" target="_blank">Video demo</a></p>
+      </div>
+
+    </div>
+  </section>
+<section id="cv">
+  <h2>Curriculum Vitae</h2>
+  <div class="card" style="text-align:center;">
+    <p>
+      Mi CV resume mi perfil como <strong>Backend Developer</strong>,
+      experiencia laboral, proyectos destacados y stack tecnológico.
+    </p>
+
+    <a href="RubenLedesma-DesarrolladorSoftware2025.pdf"
+       class="nav-btn"
+       style="margin-top:20px;display:inline-block;" target="_blank">
+      📄 Descargar CV en PDF
+    </a>
+
+    <p style="margin-top:16px;color:var(--muted);font-size:.9rem;">
+      Última actualización: 2025
+    </p>
+  </div>
+</section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="card">
+      <p>📩 Email: <a href="mailto:rubenledesma.dev@gmail.com">rubenledesma.dev@gmail.com</a></p>
+      <p>💻 GitHub: <a href="https://github.com/rubenledesma10" target="_blank">github.com/rubenledesma10</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/ledesma-ruben/" target="_blank">linkedin.com/in/ledesma-ruben</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 · Portfolio personal · Desarrollador de Software
+  </footer>
+
+</body>
+</html>
